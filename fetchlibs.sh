@@ -3,8 +3,8 @@
 # taken from the QIRA project
 
 DEBOOTSTRAP_DIR=/usr/share/debootstrap
-UBUNTU_KEYRING=/usr/share/keyrings/ubuntu-archive-keyring.gpg
-DEBIAN_KEYRING=/usr/share/keyrings/debian-archive-keyring.gpg
+UBUNTU_KEYRING=/usr/share/keyrings/ubuntu-archive-removed-keys.gpg
+DEBIAN_KEYRING=/usr/share/keyrings/debian-archive-removed-keys.gpg
 
 if [ ! -d "$DEBOOTSTRAP_DIR" ] || [ ! -f "$DEBIAN_KEYRING" ]; then
   echo "this script requires debootstrap and debian-archive-keyring to be installed"
